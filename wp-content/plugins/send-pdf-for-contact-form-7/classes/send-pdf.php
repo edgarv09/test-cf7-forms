@@ -329,7 +329,7 @@ class cf7_sendpdf {
 
     function wpcf7pdf_session_start() {
         if ( ! session_id() ) {
-          @session_start();
+          session_start(['read_and_close' => true,]);
         }
         // On enregistre un ID en session
         if ( isset( $_SESSION['pdf_uniqueid'] ) ) {
@@ -414,8 +414,8 @@ class cf7_sendpdf {
                 $files = array(
                     array(
                         'base' 		=> $upload_dir['basedir'] . '/sendpdfcf7_uploads/',
-                        'file' 		=> '.htaccess',
-                        'content' 	=> 'Options -Indexes'
+                        'file' 		=> 'index.php',
+                        'content' 	=> '<?php // Silence is Golden'
                     ),
                     array(
                         'base' 		=> $upload_dir['basedir'] . '/sendpdfcf7_uploads/'.$id,
@@ -1318,7 +1318,7 @@ class cf7_sendpdf {
         $displayAddEventList = 0;
         
         if ( ! session_id() ) {
-          @session_start();
+            session_start(['read_and_close' => true,]);
         }
         
         // On recupere l'ID du Formulaire
