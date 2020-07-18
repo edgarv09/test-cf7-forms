@@ -1,0 +1,154 @@
+http://practica-forms.local/parte-1/
+http://practica-forms.local/parte-2/
+http://practica-forms.local/parte-3/
+
+
+
+Para subir archivos
+
+
+https://es.wordpress.org/plugins/drag-and-drop-multiple-file-upload-contact-form-7/#:~:text=Upload%20the%20plugin%20files%20to,the%20'Plugins'%20screen%20in%20WordPress
+
+
+Otro de formularios
+
+http://web-settler.com/ulp-support/
+
+https://wordpress.org/plugins/flamingo/
+
+
+
+este esta muy pro
+
+https://codecanyon.net/item/contact-form-7-multistep-pro/19635969
+
+
+Para crear archivos pdf
+
+http://practica-forms.local/wp-admin/plugin-install.php?tab=plugin-information&plugin=pdf-forms-for-contact-form-7&TB_iframe=true&width=772&height=697
+https://wordpress.org/plugins/cf7-grid-layout/
+
+
+
+
+
+https://codecanyon.net/item/contact-form-7-multistep-pro/19635969
+
+https://codecanyon.net/item/contact-form-7-addon-bundle-all-in-one/20405247?irgwc=1&clickid=zA%3AyN%3ATkSxyOWLtwUx0Mo3YVUkiyiNzX-SIxXI0&iradid=275988&irpid=1288642&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1288642&utm_medium=affiliate&utm_source=impact_radius
+
+
+https://codecanyon.net/item/drop-uploader-for-contact-form-7-dragdrop-file-uploader-addon/16699162
+
+
+este esta super bueno pero vale
+
+http://practica-forms.local/wp-admin/plugin-install.php?tab=plugin-information&plugin=cf7-multi-step&TB_iframe=true&width=772&height=697
+
+
+
+https://wordpress.org/plugins/cf7-multi-step/
+
+Para administrar y guardar en la DB
+
+
+https://blog.cf7skins.com/save-contact-form-7-wordpress-database/
+
+
+
+https://kinsta.com/blog/wordpress-multisite/
+
+https://kinsta.com/blog/wordpress-com-vs-wordpress-org/
+
+
+
+https://wordpress.org/support/topic/is-smtp-plugin-required-to-send-contact-form-on-godaddy/
+
+
+
+
+https://demo.ninjateam.org/contact-form-7-multi-step/
+https://ninjateam.org/contact-form-7-multi-step/
+https://ninjateam.org/contact-form-7-database/#doc-cliro-features
+
+https://www.fabriziovanmarciano.com/custom-css-contact-form-7/
+
+
+
+hidden fields
+
+SELECT CONCAT( DATE_FORMAT(now(), "%Y%m%d-%H%i%s-"), FLOOR(RAND() * 999) )
+
+
+
+https://es.wordpress.org/plugins/country-phone-field-contact-form-7/
+
+este fue el que utilice
+https://wordpress.org/plugins/international-telephone-input-for-contact-form-7/
+
+https://wordpress.org/plugins/cf7-element-converter/
+
+mas para la base de datos
+https://github.com/mdsimpson/contact-form-7-to-database-extension
+
+https://www.sitepoint.com/create-custom-shortcodes-for-wordpress-in-two-minutes/
+
+https://wordpress.org/plugins/cf7-summary-and-print/
+
+https://es.wordpress.org/plugins/send-pdf-for-contact-form-7/
+https://www.youtube.com/watch?v=UDy2db4LV-I
+
+https://wordpress.org/plugins/cf7-email-add-on/
+https://www.youtube.com/watch?v=jy84xqnj0Zk&feature=youtu.be
+https://wordpress.org/plugins/wpcf7-redirect/
+https://fabianvazquez.es/contact-form-7-tutorial-configuracion/
+
+
+https://www.wpexplorer.com/best-contact-form-extensions/
+https://premium.wpmudev.org/blog/extending-contact-form-7-with-plugins/
+
+
+https://translatepress.com/translate-contact-form-7-using-translatepress/#:~:text=Contact%20Form%207%20is%20the,field%20names%20for%20each%20language.
+
+https://es.wordpress.org/plugins/cf7-polylang/
+
+https://es.aliexpress.com/item/4001139543020.html?spm=a2g0o.detail.1000023.13.72767c80b3QaHi
+
+https://es.aliexpress.com/item/4000477626987.html?spm=a2g0o.detail.1000015.1.77d540ccX3ryAJ&scm=1007.14452.151110.0&scm_id=1007.14452.151110.0&scm-url=1007.14452.151110.0&pvid=1e3905c1-1978-456f-b513-849eafe771c2&ad_pvid=202006270030504911690935354269574063_7&fromDetail
+
+https://es.aliexpress.com/item/4000093524642.html?spm=a2g0o.detail.1000060.3.6cf516c63yyVoi&gps-id=pcDetailBottomMoreThisSeller&scm=1007.13339.146401.0&scm_id=1007.13339.146401.0&scm-url=1007.13339.146401.0&pvid=9cdf697d-27e0-47c4-bb0c-23999fe31e0e&_t=gps-id:pcDetailBottomMoreThisSeller,scm-url:1007.13339.146401.0,pvid:9cdf697d-27e0-47c4-bb0c-23999fe31e0e,tpp_buckets:668%230%23177981%2315_668%23808%235965%23303_668%23888%233325%237_668%232846%238113%23664_668%232717%237565%23780_668%233164%239976%23521
+
+
+python3 main.py -v --epub -c "Computer Science" "Business and Management" "Economics and Finance" "Mathematics and Statistics" "Business and Economics"
+
+DDR4 - 8GB 2933 MHZ HYPERX PREDATOR RGB 285,000 x2 = 580
+NTEL CORE i7 9700 (3,0-12MB-8CORE)- IX  1590
+GIGABYTE/B365M AORUS ELITE.3,1.CROSS.A.V.R.4DDR4.IX 450
+CAJA AEROCOOL CYLON PRO RGB BLANCA  305
+4 TERAS SATA III SEAGATE BARRACUDA (256MB)  375
+SOLIDO SATA (SSD) 1TB WESTERN DIGITAL GREEN 465
+
+
+https://www.wpbeginner.com/plugins/how-to-change-custom-post-type-permalinks-in-wordpress/#:~:text=Changing%20Custom%20Post%20Type%20Permalinks%20in%20WordPress&text=Upon%20activation%2C%20you%20need%20to,in%20your%20custom%20post%20type.
+
+https://www.ibenic.com/extending-wp-query-custom-queries-tables/
+
+
+select tb.obj
+
+from (
+SELECT JSON_OBJECT(name, value) as obj
+FROM `wp_cf7_vdata_entry`
+where cf7_id = 25 and data_id = 9) as tb
+
+
+
+SELECT GROUP_CONCAT(JSON_OBJECT(name, value))
+FROM `wp_cf7_vdata_entry`
+where cf7_id = 25 and data_id = 9
+
+
+----> esta es
+
+SELECT JSON_OBJECTAGG(name, value)
+FROM `wp_cf7_vdata_entry`
+where cf7_id = 25 and data_id = 9
