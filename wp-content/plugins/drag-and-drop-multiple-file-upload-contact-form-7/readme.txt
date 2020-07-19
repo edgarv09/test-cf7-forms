@@ -3,7 +3,7 @@ Donate link : http://codedropz.com/donation
 Tags: drag and drop, contact form 7, ajax uploader, multiple file, upload, contact form 7 uploader
 Requires at least: 3.0.1
 Tested up to: 5.4.1
-Stable tag: 1.3.5.1
+Stable tag: 1.3.5.3
 Requires PHP: 5.2.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -37,20 +37,22 @@ Here's a little [DEMO](http://codedropz.com/contact).
 Checkout available features on **PRO version**.
 
 * Image Preview - Show Thumbnail for images
-* Auto Delete Files - After Form Submission 
+* Auto Delete Files - After Form Submission
   - *(1 hour, 4 hours, 8 hours , days, months etc)*
 * Zip Files ( Compressed File )
 * Save Files to Wordpress Media Library
-* Change Upload Directory
+* Change Upload Folder
+  - Contact Form 7 - Fields
   - Generated Name - Timestamp
   - Random Folder
   - By User
-  - Custom Folder 
+  - Custom Folder
+* Change Wordpress Upload Directory
 * Send to email as individual attachment, ZIP archive or as a links
 * Chunks Upload *( Break large files into smaller Chunks )*
 * Max Total Size *( of all Uploaded Files )*
 * Parallel/Sequential Upload *( Number of files to simultaneously upload )*
-* Change Filename Pattern ({filename}, {ip_address}, {random}, {post_id}, {post_slug}, etc.)
+* Change Filename Pattern ({filename}, {cf7-field-name}, {ip_address}, {random}, {post_id}, {post_slug}, etc.)
 * Automatically Optimize Images
 * Able to Resize/Crop image (ie: 800x800)
 * Improved Security
@@ -64,9 +66,12 @@ You can get [PRO Version here](https://www.codedropz.com/purchase-plugin/)!
 * [Drag & Drop Multiple File Upload - WPForms](https://www.codedropz.com/drag-drop-file-uploader-wpforms/)
 An extension for **WPForms** - Transform your simple file upload into beautiful **"Drag & Drop Multiple File Upload"**.
 
+* [Drag & Drop Multiple File Upload - WooCommerce](https://wordpress.org/plugins/drag-and-drop-multiple-file-upload-for-woocommerce/)
+An extension for **WooCommerce** - Transform your simple file upload into beautiful **"Drag & Drop Multiple File Upload"**.
+
 **PLUGIN GUIDE - FREE VERSION**
 
-[youtube https://www.youtube.com/watch?v=IieKT-ja7Cg]
+[youtube https://www.youtube.com/watch?v=DvuvmzIImYo]
 
 == Frequently Asked Questions ==
 
@@ -128,6 +133,15 @@ To install this plugin see below:
 
 == Changelog ==
 
+= 1.3.5.3 =
+* Fixed - PHP Fatal error on server not supporting mb_check_encoding.
+* Fixed - Fatal error: Uncaught Error: Call to a member function scan_form_tags()
+  - When "Accept PayPal Payments using Contact Form 7" installed.
+
+= 1.3.5.2 =
+* Added - Improved sercurity ( Limit the user input to a file name and ignore injected path names )
+* Modified - Email links ( display only the filename )
+
 = 1.3.5.1 =
 * Bug - Quick Fix ( Unable to submit form when acceptance field is set  )
    - Issue if "additional settings" section added  this line: acceptance_as_validation: on
@@ -139,7 +153,7 @@ To install this plugin see below:
 * Modified - File Upload error message  ( display error code )
 
 = 1.3.4 =
-* Fixed - Removed uploaded files when item Inbound Messages "Permanently Deleted". 
+* Fixed - Removed uploaded files when item Inbound Messages "Permanently Deleted".
 * Added -  Counter of how many files are uploaded ( ie: 4 of 10 )
 * New - Features allow to set Minimum File Upload.
 - ie : minimum upload:2, max upload:10 = [mfile* upload-file-669 min-file:2 max-file:10]
@@ -260,7 +274,7 @@ This version fixed minor issues/bugs and add multiple drag and drop fields in a 
 This version fixed minor issues and bugs.
 
 = 1.2.2 =
-Added some usefull features.
+Added some useful features.
 
 = 1.2.4 =
 Added new features and fixes.

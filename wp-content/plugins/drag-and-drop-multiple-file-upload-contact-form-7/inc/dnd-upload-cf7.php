@@ -59,7 +59,7 @@
 
 		// Create dir
 		$dir = dnd_get_upload_dir();
-		if( is_dir( $dir['upload_dir'] ) ) {
+		if( isset( $dir['upload_dir'] ) && is_dir( $dir['upload_dir'] ) ) {
 			// Generate .htaccess file`
 			$htaccess_file = path_join( dirname( $dir['upload_dir'] ), '.htaccess' );
 			if ( ! file_exists( $htaccess_file ) ) {
@@ -211,7 +211,9 @@
 				}
 
 				// Delete files from dir
-				wp_delete_file( $dir . $file );
+				if( $file != '.htaccess' ) {
+					wp_delete_file( $dir . $file );
+				}
 
 				$count += 1;
 
@@ -251,6 +253,9 @@
 			// Parse fields
 			$fields = $wpcf7->scan_form_tags();
 
+			// Links
+			$links = array();
+
 			// Prop email
 			$mail = $wpcf7->prop('mail');
 			$mail_2 = $wpcf7->prop('mail_2');
@@ -262,10 +267,18 @@
 			foreach( $fields as $field ) {
 				if( $field->basetype == 'mfile') {
 					if( isset( $submitted['posted_data'][$field->name] ) && ! empty( $submitted['posted_data'][$field->name] ) ) {
-						$files = implode( "\n" , $submitted['posted_data'][$field->name] );
-						$mail['body'] = str_replace( "[$field->name]", "\n" . $files, $mail['body'] );
+
+						// Get posted_data files
+						$files = $submitted['posted_data'][$field->name];
+
+						// Links - 1
+						$mail_links = dnd_cf7_links( $files, $mail['use_html'] );
+						$mail['body'] = str_replace( "[$field->name]", "\n" . implode( "\n", $mail_links ), $mail['body'] );
+
+						// Links - 2
 						if( $mail_2['active'] ) {
-							$mail_2['body'] = str_replace( "[$field->name]", "\n" . $files, $mail_2['body'] );
+							$mail_links_2 = dnd_cf7_links( $files, $mail_2['use_html'] );
+							$mail_2['body'] = str_replace( "[$field->name]", "\n" . implode( "\n", $mail_links_2 ), $mail_2['body'] );
 						}
 					}
 				}
@@ -283,9 +296,39 @@
 		return $wpcf7;
 	}
 
+	// Get file links.
+	function dnd_cf7_links( $files, $use_html = false) {
+
+		// check and make sure we have files
+		if( ! $files ) {
+			return;
+		}
+
+		// Setup html links
+		$links = array();
+		foreach( $files as $file ) {
+			$links[] = ( $use_html ? '<a href="'. esc_url( $file ) .'">'. wp_basename( $file ) .'</a>' : $file );
+		}
+
+		// Allow other themes/plugin to modify data.
+		return apply_filters('dndcf7_before_send_files', $links, $files );
+	}
+
+	// Log message...
+	function dnd_logs( $message, $email = false ) {
+		$uploads_dir = dnd_get_upload_dir();
+		$file = fopen( $uploads_dir['upload_dir']."/logs.txt", "a") or die("Unable to open file!");
+		fwrite( $file, "\n". ( is_array( $message ) ? print_r( $message, true ) : $message ) );
+		fclose( $file );
+	}
+
 	// hooks - Custom cf7 Mail components ( Attached File on Email )
 	function dnd_cf7_mail_components( $components, $form ) {
 		global $_mail;
+
+		if( ! $form ) {
+			return;
+		}
 
 		// Get upload directory
 		$uploads_dir = dnd_get_upload_dir();
@@ -618,7 +661,8 @@
 		$filename = wp_basename( $file['name'] );
 		$filename = wpcf7_canonicalize( $filename, 'as-is' );
 
-		if( mb_check_encoding( $filename, 'ASCII' ) ){
+		// Check if string is ascii then proceed with antiscript function ( remove or clean filename )
+		if( dnd_cf7_check_ascii( $filename ) ){
 			$filename = wpcf7_antiscript_file_name( $filename );
 		}
 
@@ -649,8 +693,24 @@
 		die;
 	}
 
+	// Check if a string is ASCII.
+	function dnd_cf7_check_ascii( $string ) {
+		if ( function_exists( 'mb_check_encoding' ) ) {
+			if ( mb_check_encoding( $string, 'ASCII' ) ) {
+				return true;
+			}
+		} elseif ( ! preg_match( '/[^\x00-\x7F]/', $string ) ) {
+			return true;
+		}
+
+		return false;
+	}
+
 	// Delete file
 	function dnd_codedropz_upload_delete() {
+
+		// Get folder directory
+		$dir = dnd_get_upload_dir();
 
 		// check and verify ajax request
 		if( is_user_logged_in() ) {
@@ -658,10 +718,10 @@
 		}
 
 		// Sanitize Path
-		$path = ( isset( $_POST['path'] ) ? sanitize_text_field( $_POST['path'] ) : null );
+		$get_path = ( isset( $_POST['path'] ) ? sanitize_text_field( $_POST['path'] ) : null );
 
-		// Get folder directory
-		$dir = dnd_get_upload_dir();
+		//limit the user input to a file name and to ignore injected path names
+		$path = basename( $get_path );
 
 		// Make sure path is set
 		if( ! is_null( $path ) ) {
@@ -672,7 +732,7 @@
 			}
 
 			// Concatenate path and upload directory
-			$file_path = realpath( trailingslashit( dirname( $dir['upload_dir'] ) ) . trim( $path ) );
+			$file_path = realpath( trailingslashit( $dir['upload_dir'] ) . trim( $path ) );
 
 			// Check if is in the correct upload_dir
 			if( ! preg_match("/". wpcf7_dnd_dir ."/i", $file_path ) ) {

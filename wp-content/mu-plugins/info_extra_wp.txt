@@ -152,3 +152,25 @@ where cf7_id = 25 and data_id = 9
 SELECT JSON_OBJECTAGG(name, value)
 FROM `wp_cf7_vdata_entry`
 where cf7_id = 25 and data_id = 9
+
+
+
+como configurar la pagina
+
+[sc name="css_multi_step"]
+[sc name="calculate_random_id"]
+[contact-form-7 id="25" title="UNO SOLO PERO CON DIVS"]
+[sc name="multi_steps"]
+
+
+
+
+https://wordpress.org/support/topic/contact-form-no-longer-sending-files-as-attachments-in-email/
+
+
+https://es.wordpress.org/plugins/cf7-html-email-template-extension/#description
+
+
+mas de DB
+
+https://wordpress.org/plugins/contactic/
