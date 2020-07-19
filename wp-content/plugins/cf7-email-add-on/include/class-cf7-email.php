@@ -56,7 +56,7 @@ if ( ! class_exists( 'Cf7_Email_Add_on' )  ) {
 				array( 
 					'ajax_url' 	=> admin_url( 'admin-ajax.php' ),
 					'nonce'			=> wp_create_nonce( 'cf7-email-add-on' ),
-					'pro_features_list'	=> '<h3>' . __( "CF7 Email Addon Pro Features: ", 'cf7-email-addon' ) . '</h3><div class="inside cf7-features-list"><ul><li>' . __( 'Ability to export the HTML templates', 'cf7-email-addon' ) . '</li><li>' . __( 'Setting panel to easily update the information', 'cf7-email-addon' ) . '</li><li>' . __( '18+ Pre-developed responsive email templates', 'cf7-email-addon' ) . '</li></ul><hr><div class="cf7-buy-now"><a href="' . esc_url( 'https://codecanyon.net/item/contact-form-7-email-add-on-pro/23172379' ) . '" target="_blank">' . __( 'Buy Now', 'cf7-email-add-on' ) . '</a></div></div>'
+					'pro_features_list'	=> '<h3>' . __( "CF7 Email Addon Pro Features: ", 'cf7-email-addon' ) . '</h3><div class="inside cf7-features-list"><ul><li>' . __( 'Ability to export the HTML templates', 'cf7-email-addon' ) . '</li><li>' . __( 'Setting panel to easily update the information', 'cf7-email-addon' ) . '</li><li>' . __( 'Preview template & send test email', 'cf7-email-addon' ) . '</li></ul><hr><div class="cf7-buy-now"><a href="' . esc_url( 'https://codecanyon.net/item/contact-form-7-email-add-on-pro/23172379' ) . '" target="_blank">' . __( 'Buy Now', 'cf7-email-add-on' ) . '</a><a href="' . esc_url( 'https://krishaweb.info/cf7-email-addon-demo' ) . '" target="_blank">' . __( 'Live Demo', 'cf7-email-add-on' ) . '</a></div></div>'
 				) 
 			);
 		}

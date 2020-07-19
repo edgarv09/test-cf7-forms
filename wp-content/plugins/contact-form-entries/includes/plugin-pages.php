@@ -1034,7 +1034,6 @@ $this->show_msgs();
 $base_url=vxcf_form::get_base_url();
 $main_fields=array('vxurl','vxscreen','vxbrowser','vxcreated','vxupdated');
 if(is_array($form_id)){$form_id=vxcf_form::$form_id_string;} 
-
 include_once(vxcf_form::$path . "templates/leads.php");
 } 
 

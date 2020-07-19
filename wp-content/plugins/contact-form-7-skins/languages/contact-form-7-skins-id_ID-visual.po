@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Contact Form 7 Skins Visual 0.7.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-25T05:51:48+01:00\n"
+"POT-Creation-Date: 2020-06-02T06:40:06+02:00\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Your Name <you@example.com>\n"
 "Language-Team: Your Team <translations@cf7skins.com>\n"
@@ -18,428 +18,473 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __\n"
 "X-Poedit-Basepath: ../src/visual\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.3.1\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: visual.js:16227
+#: visual.js:14875
 msgid "Acceptance (confirm)"
 msgstr "Penerimaan (konfirmasi)"
 
-#: visual.js:16235 visual.js:43052
+#: visual.js:14875 visual.js:38170
 msgid "Make this checkbox checked by default"
 msgstr "Buat kotak centangan ini di centang secara bawaan"
 
-#: visual.js:16240 visual.js:43058
+#: visual.js:14875 visual.js:38170
 msgid "Make this work inversely"
 msgstr "Buat ini bekerja secara terbalik"
 
-#: visual.js:16245 visual.js:43064
+#: visual.js:14875 visual.js:38170
 msgid "Make this checkbox optional"
 msgstr "Buat kotak centangan ini dicentang secara bawaan"
 
-#: visual.js:16259
+#: visual.js:14876
 msgid "Checkbox (option)"
 msgstr "Kotak centang (pilihan)"
 
-#: visual.js:16267 visual.js:16448 visual.js:43171
+#: visual.js:14876 visual.js:14880 visual.js:38181
 msgid "Put a label first, a checkbox last"
 msgstr "Buat label pertama, kotak centangan terakhir"
 
-#: visual.js:16272 visual.js:16453 visual.js:43177
+#: visual.js:14876 visual.js:14880 visual.js:38181
 msgid "Wrap each item with label element"
 msgstr "Bungkus setiap item dengan elemen label"
 
-#: visual.js:16277 visual.js:43183
+#: visual.js:14876 visual.js:38181
 msgid "Make checkboxes exclusive"
 msgstr "Buat kotak centang ekslusif"
 
-#: visual.js:16297
+#: visual.js:14877
 msgid "Date"
 msgstr "Tanggal"
 
-#: visual.js:16304 visual.js:16393 visual.js:16526 visual.js:16549
-#: visual.js:16578 visual.js:16601
+#: visual.js:14877 visual.js:14878 visual.js:14885
 msgid "Default value"
 msgstr "Nilai bawaan"
 
-#: visual.js:16309 visual.js:16342 visual.js:16398 visual.js:16531
-#: visual.js:16554 visual.js:16583 visual.js:16606 visual.js:42937
+#: visual.js:14877 visual.js:14878 visual.js:14885 visual.js:38165
 msgid "Use this text as the placeholder of the field"
 msgstr "Gunakan teks ini sebagai wadah isian ruas"
 
-#: visual.js:16313 visual.js:16402
+#: visual.js:14877 visual.js:14878
 msgid "Range - min"
 msgstr "Rentang - min"
 
-#: visual.js:16317 visual.js:16406
+#: visual.js:14877 visual.js:14878
 msgid "Range - max"
 msgstr "Rentang - max"
 
-#: visual.js:16330
+#: visual.js:14877
 msgid "Email"
 msgstr "Surel"
 
-#: visual.js:16347 visual.js:16559 visual.js:16611
+#: visual.js:14877 visual.js:14885
 msgid "Akismet - this field requires author's email address"
 msgstr "Akismet - ruas ini membutuhkan alamat surel pengarang"
 
-#: visual.js:16359
+#: visual.js:14877
 msgid "File (upload)"
 msgstr "Berkas (upload)"
 
-#: visual.js:16366 visual.js:43196
+#: visual.js:14877 visual.js:38182
 msgid "File size limit (bytes)"
 msgstr "Batas ukuran berkas"
 
-#: visual.js:16370 visual.js:43218
+#: visual.js:14877 visual.js:38183
 msgid "Acceptable file types"
 msgstr "Tipe berkas diizinkan"
 
-#: visual.js:16381
+#: visual.js:14877
 msgid "Number"
 msgstr "Nomor"
 
-#: visual.js:16421
+#: visual.js:14879
 msgid "Quiz"
 msgstr "Kuis"
 
-#: visual.js:16428
+#: visual.js:14880
 msgid "Question 1"
 msgstr "Pertanyaan 1"
 
-#: visual.js:16429
+#: visual.js:14880
 msgid "Answer 1"
 msgstr "Jawaban 1"
 
-#: visual.js:16431
+#: visual.js:14880
 msgid "Question 2"
 msgstr "Pertanyaan 2"
 
-#: visual.js:16432
+#: visual.js:14880
 msgid "Answer 2"
 msgstr "Jawaban 2"
 
-#: visual.js:16440
+#: visual.js:14880
 msgid "Radio Button (option)"
 msgstr "Tombol Radio (pilih)"
 
-#: visual.js:16458 visual.js:16492
+#: visual.js:14881 visual.js:14884
 msgid "Option 1"
 msgstr "Pilihan 1"
 
-#: visual.js:16463 visual.js:16495
+#: visual.js:14883 visual.js:14884
 msgid "Option 2"
 msgstr "Pilihan 2"
 
-#: visual.js:16474
+#: visual.js:14883
 msgid "Select (dropdown)"
 msgstr "Pilih (Tarik turun)"
 
-#: visual.js:16482 visual.js:43159
+#: visual.js:14883 visual.js:38181
 msgid "Allow multiple selections"
 msgstr "Ijinkan banyak pilihan"
 
-#: visual.js:16487 visual.js:43165
+#: visual.js:14883 visual.js:38181
 msgid "Insert a blank item as the first option"
 msgstr "Masukkan item kosong sebagai pilihan pertama"
 
-#: visual.js:16506
+#: visual.js:14884
 msgid "Submit"
 msgstr "Ajukan"
 
-#: visual.js:16519
+#: visual.js:14885
 msgid "Telephone"
 msgstr "Telepon"
 
-#: visual.js:16542
+#: visual.js:14885
 msgid "Text (short text)"
 msgstr "Teks ( singkat )"
 
-#: visual.js:16571
+#: visual.js:14885
 msgid "Textarea (long text)"
 msgstr "Area teks (panjang)"
 
-#: visual.js:16594
+#: visual.js:14885
 msgid "URL (website link)"
 msgstr "URL (tautan situs)"
 
-#: visual.js:16638
+#: visual.js:14886
 msgid "Fieldset (with legend)"
 msgstr "Fieldset (dengan legend)"
 
-#: visual.js:16641
+#: visual.js:14886
 msgid "Legend .."
 msgstr "Legend .."
 
-#: visual.js:16647
+#: visual.js:14888
 msgid "List - ol"
 msgstr "List - ol"
 
-#: visual.js:16656
+#: visual.js:14889
 msgid "List Item - li"
 msgstr "List Item - li"
 
-#: visual.js:16665
+#: visual.js:14890
 msgid "Paragraph - p"
 msgstr "Paragrap - p"
 
-#: visual.js:18765 visual.js:18766
+#: visual.js:16249
 msgid "Can not save! window.cf7svisual or post ID does not exist."
 msgstr "Tidak bias menyimpan! window.cf7svisual atau nomor pos tidak ada."
 
-#: visual.js:18858
+#: visual.js:16278
 msgid "Dismiss this notice."
 msgstr "Tutup pemberitahuan ini."
 
-#: visual.js:18862
+#: visual.js:16279
 msgid "Visual saved!"
 msgstr "Visual disimpan!"
 
-#: visual.js:18882
+#: visual.js:16285
 msgid "Namespace %s is undefined!"
 msgstr "Namespace %s belum ditentukan!"
 
-#: visual.js:18892
+#: visual.js:16288
 msgid "Function %1$s.%2$s is undefined!"
 msgstr "Fungsi %1$s.%2$s belum ditentukan!"
 
-#: visual.js:18900
+#: visual.js:16290
 msgid "Function %s is undefined!"
 msgstr "Function %s belum ditentukan!"
 
-#: visual.js:19036 visual.js:42900
+#: visual.js:16305 visual.js:35539
+msgid "Form Options"
+msgstr "Opsi Formulir"
+
+#: visual.js:16323 visual.js:38164
 msgid "Legend"
 msgstr "Lagenda"
 
-#: visual.js:19043
+#: visual.js:16326
 msgid "Your Name (required)"
 msgstr "Nama Anda (dibutuhkan)"
 
-#: visual.js:19049
+#: visual.js:16327
 msgid "Email Address (required)"
 msgstr "Alamat Surel (dibutuhkan)"
 
-#: visual.js:19057
+#: visual.js:16330
 msgid "Your Message"
 msgstr "Pesan Anda"
 
-#: visual.js:19064
+#: visual.js:16333
 msgid "* Required"
 msgstr "* Dibutuhkan"
 
-#: visual.js:19067
+#: visual.js:16334
 msgid "Send"
 msgstr "Kirim"
 
-#: visual.js:19152
+#: visual.js:16361
 msgid "Unable to duplicate!"
 msgstr "Tidak bisa menggandakan!"
 
-#: visual.js:19213
+#: visual.js:16381
 msgid "Unable to add the item."
 msgstr "Tidak bias menambah item itu."
 
-#: visual.js:19337
+#: visual.js:16423
 msgid "There is no edit field available for this item."
 msgstr "Tidak ada pengubahan yang tersedia untuk item ini."
 
-#: visual.js:19439
+#: visual.js:16443
 msgid "Unable to change the item."
 msgstr "Tidak dapat mengubah item ini."
 
-#: visual.js:19774
+#: visual.js:16551
 msgid "Visual Object Data is not valid ( JSON parse error )"
 msgstr "Data Obyek Visual tidak sah ( kesalahan penguraian JSON )"
 
-#: visual.js:19801
+#: visual.js:16558
 msgid "Visual Object Data is not valid ( Invalid Cf7sType )"
 msgstr "Data Obyek Visual tidak sah ( Cf7sType tidak sah )"
 
-#: visual.js:42340
+#: visual.js:35539
+msgid "Configure this form options"
+msgstr "Konfigurasikan opsi formulir ini"
+
+#: visual.js:35547
+msgid "Visual Data"
+msgstr "Data Visual"
+
+#: visual.js:35547
+msgid "Copy & paste visual form data"
+msgstr "Salin & tempel data formulir visual"
+
+#: visual.js:35547
+msgid "Save Visual"
+msgstr "Simpan Visual"
+
+#: visual.js:38003
 msgid "Only one reCAPTCHA per form allowed."
 msgstr "Hanya satu reCAPTCHA per formulir diijinkan."
 
-#: visual.js:42355
+#: visual.js:38009
 msgid "Only one submit for each form."
 msgstr "Hanya satu tombol ajukan yang diijinkan setiap formulir."
 
-#: visual.js:42518
+#: visual.js:38076
 msgid "Only one %s allowed in a form."
 msgstr "Hanya satu %s yang diijinkan di sebuah formulir."
 
-#: visual.js:42523
+#: visual.js:38077
 msgid "Node has recaptcha children. Only one recaptcha allowed in a form."
 msgstr ""
 "Ruas memiliki reCAPTCHA sebagai anakan. Hanya satu reCAPTCHA diijinkan untuk "
 "sebuah formulir."
 
-#: visual.js:42527
+#: visual.js:38077
 msgid "Node has submit children. Only one submit allowed in a form."
 msgstr ""
 "Ruas memiliki tombol ajukan sebagai anakan. Hanya satu tombol yang diijinkan "
 "untuk sebuah formulir."
 
-#: visual.js:42820
+#: visual.js:38159
 msgid "Field Type"
 msgstr "Tipe Field"
 
-#: visual.js:42832
+#: visual.js:38159
 msgid "Spinbox"
 msgstr "Kotak Geser"
 
-#: visual.js:42834
+#: visual.js:38159
 msgid "Slider"
 msgstr "Gelincir"
 
-#: visual.js:42843
+#: visual.js:38161
 msgid "Required"
 msgstr "Diharuskan"
 
-#: visual.js:42856
+#: visual.js:38162
 msgid "Name"
 msgstr "Nama"
 
-#: visual.js:42878
+#: visual.js:38163
 msgid "Condition"
 msgstr "Kondisi"
 
-#: visual.js:42900
+#: visual.js:38164
 msgid "Label"
 msgstr "Label"
 
-#: visual.js:42922
+#: visual.js:38165
 msgid "Default Value"
 msgstr "Nilai Bawaan"
 
-#: visual.js:42957
+#: visual.js:38166
 msgid "This field requires author's name"
 msgstr "Ruas ini membutuhkan nama pengarang"
 
-#: visual.js:42964
+#: visual.js:38166
 msgid "This field requires author's email address"
 msgstr "Ruas ini membutuhkan alamat surel pengarang"
 
-#: visual.js:42971
+#: visual.js:38166
 msgid "This field requires author's URL"
 msgstr "Ruas ini membutuhkan URL pengarang"
 
-#: visual.js:42982
+#: visual.js:38167
 msgid "Range"
 msgstr "Rentang"
 
-#: visual.js:42988
+#: visual.js:38167
 msgid "Min"
 msgstr "Min"
 
-#: visual.js:42995
+#: visual.js:38167
 msgid "Max"
 msgstr "Max"
 
-#: visual.js:43013
+#: visual.js:38168
 msgid "Content"
 msgstr "Konten"
 
-#: visual.js:43029
+#: visual.js:38168
 msgid "See paragraph permitted phrasing content specification"
 msgstr "Lihat spesifikasi konten yang diijikan untuk paragraf"
 
-#: visual.js:43044 visual.js:43087
+#: visual.js:38170 visual.js:38181
 msgid "Options"
 msgstr "Pilihan"
 
-#: visual.js:43095
+#: visual.js:38181
 msgid "Default"
 msgstr "Bawaan"
 
-#: visual.js:43095
+#: visual.js:38181
 msgid "Answer"
 msgstr "Jawaban"
 
-#: visual.js:43243
+#: visual.js:38185
 msgid "Size"
 msgstr "Ukuran"
 
-#: visual.js:43252
+#: visual.js:38185
 msgid "Normal"
 msgstr "Normal"
 
-#: visual.js:43259
+#: visual.js:38185
 msgid "Compact"
 msgstr "Padat"
 
-#: visual.js:43263
+#: visual.js:38185
 msgid "Theme"
 msgstr "Thema"
 
-#: visual.js:43272
+#: visual.js:38185
 msgid "Light"
 msgstr "Terang"
 
-#: visual.js:43279
+#: visual.js:38185
 msgid "Dark"
 msgstr "Gelap"
 
-#: visual.js:43292
+#: visual.js:38186
 msgid "Id Attribute"
 msgstr "Atribut Id"
 
-#: visual.js:43314
+#: visual.js:38187
 msgid "Class Attribute"
 msgstr "Atribut Kelas"
 
-#: visual.js:43451
+#: visual.js:38227
 msgid "Save"
 msgstr "Simpan"
 
-#: visual.js:43451
+#: visual.js:38227
 msgid "Done"
 msgstr "Selesai"
 
-#: visual.js:43850
+#: visual.js:38358
 msgid "Drag/Move"
 msgstr "Geser/Pindah"
 
-#: visual.js:43870
+#: visual.js:38361
 msgid "Collapse"
 msgstr "Sembunyi"
 
-#: visual.js:43870
+#: visual.js:38361
 msgid "Expand"
 msgstr "Buka"
 
-#: visual.js:44537
+#: visual.js:38570
 msgid "edit"
 msgstr "ubah"
 
-#: visual.js:44546
+#: visual.js:38570
 msgid "duplicate"
 msgstr "gandakan"
 
-#: visual.js:44555
+#: visual.js:38570
 msgid "delete"
 msgstr "hapus"
 
-#: visual.js:44566
+#: visual.js:38570
 msgid "Add-on options"
 msgstr "Pilihan add-on"
 
-#: visual.js:51497
+#: visual.js:46142
 msgid "Dismiss this notice"
 msgstr "Abaikan peringatan ini"
 
-#: visual.js:51668
+#: visual.js:46193
 msgid "FIELDS (CF7 TAGS)"
 msgstr "RUAS (TAG CF7)"
 
-#: visual.js:51683
+#: visual.js:46193
+msgid ""
+"Drag and drop or click a Contact Form 7 Tag to add it to the visual form "
+"editor."
+msgstr ""
+"Seret dan lepas atau klik Tag Contact Form 7 untuk menambahkannya ke editor "
+"formulir visual."
+
+#: visual.js:46193
+msgid ""
+"To see how Fields are used, select a template it's a great way to get "
+"started quickly."
+msgstr ""
+"Untuk melihat bagaimana Fields digunakan, pilih templat itu cara yang bagus "
+"untuk memulai dengan cepat."
+
+#: visual.js:46193
+msgid "Any field content can be changed by clicking Edit on the field."
+msgstr ""
+"Konten field apa pun dapat diubah dengan mengeklik Edit pada field tersebut."
+
+#: visual.js:46193
 msgid "FIELDS (CF7 SKINS ITEMS)"
 msgstr "RUAS (ITEM CF7 SKINS)"
 
-#~ msgid "Visual Data"
-#~ msgstr "Data Visual"
+#: visual.js:46193
+msgid "Use CF7 Skins Fields for the layout of your form."
+msgstr "Gunakan CF7 Skins Fields untuk tata letak formulir Anda."
 
-#~ msgid "Save Visual"
-#~ msgstr "Simpan Visual"
+#: visual.js:46193
+msgid ""
+"Fieldsets, legends, and lists are used to group related fields, and allow "
+"for more detailed styling."
+msgstr ""
+"Fieldset, legend dan list digunakan untuk mengelompokkan ruas yang "
+"berhubungan, dan memberikan penggaya yang terinci."
 
 #~ msgid ""
 #~ "Drag and drop or click a Contact Form 7 Tag to add it to the visual form "
@@ -451,12 +496,3 @@ msgstr "RUAS (ITEM CF7 SKINS)"
 #~ "formulir visual. Untuk melihat bagaiman Ruas digunakan, pilihlah sebuah "
 #~ "templat yang merupakan cara cepat untuk memulai. Segala konten ruas dapat "
 #~ "diubah dengan melakukan klik Ubah di ruas tersebut."
-
-#~ msgid ""
-#~ "Use CF7 Skins Fields for the layout of your form. Fieldsets, legends, and "
-#~ "lists are used to group related fields, and allow for more detailed "
-#~ "styling"
-#~ msgstr ""
-#~ "Gunakan Ruas CF7 Skins untuk tata letak formulir anda. Fieldset, legend "
-#~ "dan list digunakan untuk mengelompokkan ruas yang berhubungan, dan "
-#~ "memberikan penggaya yang terinci"

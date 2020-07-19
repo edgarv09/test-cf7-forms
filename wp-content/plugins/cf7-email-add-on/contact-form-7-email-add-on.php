@@ -3,7 +3,7 @@
  * Plugin Name: Contact Form 7 Email Add On
  * Plugin URI: https://wordpress.org/plugins/cf7-email-add-on/
  * Description: Contact Form 7 Email Add on plugin provides the responsive Email templates to admin and users.
- * Version: 1.4
+ * Version: 1.6
  * Author: KrishaWeb
  * Author URI: https://www.krishaweb.com
  * Text Domain: cf7-email-addon

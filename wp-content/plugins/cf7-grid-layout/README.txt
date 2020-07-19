@@ -326,8 +326,15 @@ For JavaScript helper codes, paste them in your `<theme folder>/js/<form-unique-
 23. (23) You can filter mail tags, hover your mouse over the blue information icon next to each tag and click the link, this will copy the filter code to your clipboard which you can paste into your functions.php file.
 
 == Changelog ==
+= 3.3.4 =
+* remove continue 2 in public class.
+= 3.3.3 =
+* fix really simple captcha bug.
+* fix missing hidden fields in CF7 v5.2.
+= 3.3.2 =
+* fix locale setting for single non-english langauge sites.
 = 3.3.1 =
-* fixed multiple dynamic select tag.
+* fix mulsitple select bug.
 = 3.3.0 =
 * added 'cf7sg_ui_grid_helper_hooks' action for plugin integration.
 * added 'cf7sg_ui_grid_js_helper_hooks' action for plugin integration.

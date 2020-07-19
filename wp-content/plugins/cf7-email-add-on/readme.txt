@@ -6,8 +6,8 @@ Author URI: https://krishaweb.com
 Contributors: hardik2221, krishaweb, pratikgandhi, nikunjchauhan
 Tags: email, cf7, contact form, email template, html email,user email
 Requires at least: 4.6
-Tested up to: 5.2.3
-Stable tag: 1.4
+Tested up to: 5.4
+Stable tag: 1.6
 Copyright: (c) 2012-2019 KrishaWeb Technologies PVT LTD (info@krishaweb.com)
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -39,6 +39,7 @@ Different pre-developed email templates lets also enables you to do the A/B test
 > * 18+ Pre-developed responsive email templates
 > * Can download HTML Template for external use
 > * Compatible with custom shortcode
+> * Preview template & send test email
 
 = Buy Contact Form 7 Email Add on Pro on Codecanyon : =
 <a rel="nofollow" href="https://codecanyon.net/item/contact-form-7-email-add-on-pro/23172379">https://codecanyon.net/item/contact-form-7-email-add-on-pro/23172379</a>
@@ -58,6 +59,11 @@ Check such amazing email add-on for Ninja form as well at <a rel="nofollow" href
 Great! I’d love to hear from you at <a href="mailto:support@krishaweb.com">support@krishaweb.com</a>
 
 == Changelog ==
+= 1.6 =
+* Bug Fixed
+
+= 1.5 =
+* Added: template preview option
 
 = 1.4 =
 * Added: guideline pupup for special mail tags

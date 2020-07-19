@@ -181,10 +181,12 @@ jQuery(document).ready(function() {
         // On récupère le dossier upload de WP
         $upload_dir = wp_upload_dir();
         $createDirectory = cf7_sendpdf::wpcf7pdf_folder_uploads($idForm);
-
+        
+        $custom_tmp_path = get_option('wpcf7pdf_path_temp');
+        
         // On récupère le format de date dans les paramètres
         $date_format = get_option( 'date_format' );
-        $hour_format = get_option('time_format');
+        $hour_format = get_option( 'time_format' );
 
         // Definition des marges par defaut
         $marginHeader = 10;
@@ -226,9 +228,9 @@ jQuery(document).ready(function() {
             if( isset($meta_values["margin_top"]) && $meta_values["margin_top"]!='' ) { $marginTop = $meta_values["margin_top"]; }
 
             if( isset($meta_values['fillable_data']) && $meta_values['fillable_data']== 'true') {
-                $mpdf = new \Mpdf\Mpdf(['mode' => 'c', 'format' => $formatPdf, 'margin_header' => $marginHeader,'margin_top' => $marginTop, 'default_font' => $fontPdf, 'default_font_size' => $fontsizePdf,]);
+                $mpdf = new \Mpdf\Mpdf(['mode' => 'c', 'format' => $formatPdf, 'margin_header' => $marginHeader,'margin_top' => $marginTop, 'default_font' => $fontPdf, 'default_font_size' => $fontsizePdf, 'tempDir' => $custom_tmp_path]);
             } else {
-                $mpdf = new \Mpdf\Mpdf(['mode' => 'utf-8', 'format' => $formatPdf, 'margin_header' => $marginHeader,'margin_top' => $marginTop, 'default_font' => $fontPdf, 'default_font_size' => $fontsizePdf,]);
+                $mpdf = new \Mpdf\Mpdf(['mode' => 'utf-8', 'format' => $formatPdf, 'margin_header' => $marginHeader,'margin_top' => $marginTop, 'default_font' => $fontPdf, 'default_font_size' => $fontsizePdf, 'tempDir' => $custom_tmp_path]);
             }
             //var_dump($meta_values);
             ///exit();
@@ -249,8 +251,8 @@ jQuery(document).ready(function() {
             }
 
             if( isset($meta_values['footer_generate_pdf']) && $meta_values['footer_generate_pdf']!='' ) {
-                $footerText = str_replace('[reference]', $_SESSION['pdf_uniqueid'], $meta_values['footer_generate_pdf']);
-                $footerText = str_replace('[url-pdf]', $upload_dir['url'].'/'.$nameOfPdf.'-'.$_SESSION['pdf_uniqueid'].'.pdf', $footerText);
+                $footerText = str_replace('[reference]', $_COOKIE['pdf_uniqueid'], $meta_values['footer_generate_pdf']);
+                $footerText = str_replace('[url-pdf]', $upload_dir['url'].'/'.$nameOfPdf.'-'.$_COOKIE['pdf_uniqueid'].'.pdf', $footerText);
                 if( isset($meta_values['date_format']) && !empty($meta_values['date_format']) ) {
                     $dateField = date_i18n($meta_values['date_format']);
                 }
@@ -282,7 +284,6 @@ jQuery(document).ready(function() {
             $mpdf->SetHTMLHeader($entetePage);
 
             $messageText = $meta_values['generate_pdf'];
-            
             
             if (isset($meta_values['data_input']) && $meta_values['data_input']=='true') {
                     
@@ -357,8 +358,8 @@ jQuery(document).ready(function() {
                 $messageText = preg_replace("/(\r\n|\n|\r)/", "<div></div>", $messageText);
                 $messageText = str_replace("<div></div><div></div>", '<div style="height:10px;"></div>', $messageText);
             }
-            $messageText = str_replace('[reference]', $_SESSION['pdf_uniqueid'], $messageText);
-            $messageText = str_replace('[url-pdf]', $upload_dir['url'].'/'.$nameOfPdf.'-'.$_SESSION['pdf_uniqueid'].'.pdf', $messageText);
+            $messageText = str_replace('[reference]', $_COOKIE['pdf_uniqueid'], $messageText);
+            $messageText = str_replace('[url-pdf]', $upload_dir['url'].'/'.$nameOfPdf.'-'.$_COOKIE['pdf_uniqueid'].'.pdf', $messageText);
             if( isset($meta_values['date_format']) && !empty($meta_values['date_format']) ) {
                 $dateField = date_i18n($meta_values['date_format']);
             } else {
@@ -995,9 +996,9 @@ $pathFolder = serialize($createDirectory);
                         </td>
                     </tr>
                     <tr>
-                        <td><?php _e('Add a CSS file', 'send-pdf-for-contact-form-7'); ?><br /><p><a href="<?php echo WPCF7PD_URL.'css/mpdf-style-A4.css'; ?>" target="_blank"><small><i><?php _e('Donwload a example A4 page here', 'send-pdf-for-contact-form-7'); ?></small></i></a></p></td>
+                        <td><?php _e('Add a CSS file', 'send-pdf-for-contact-form-7'); ?><br /><p><a href="<?php echo WPCF7PD_URL.'css/mpdf-style-A4.css'; ?>" target="_blank"><small><i><?php _e('Donwload a example A4 page here', 'send-pdf-for-contact-form-7'); ?></i></small></a></p></td>
                         <td>
-                            <input size="100%" class="wpcf7-form-field" name="wp_cf7pdf_settings[stylesheet]" value="<?php if( isset($meta_values['stylesheet']) ) { echo esc_url($meta_values['stylesheet']); } ?>" type="text" /></a>
+                            <input size="100%" class="wpcf7-form-field" name="wp_cf7pdf_settings[stylesheet]" value="<?php if( isset($meta_values['stylesheet']) ) { echo esc_url($meta_values['stylesheet']); } ?>" type="text" />
                         </td>
                     </tr>
                     <tr>
@@ -1079,7 +1080,7 @@ $pathFolder = serialize($createDirectory);
                                     <td width="50%"><br /></td>
                                     <td width="50%" align="center">
                                         <?php if( file_exists($createDirectory.'/preview-'.$idForm.'.pdf') ) { ?><br />
-                                        <a href="<?php echo str_replace($upload_dir['basedir'], $upload_dir['baseurl'], $createDirectory ).'/preview-'.$idForm.'.pdf?ver='.$_SESSION['pdf_uniqueid']; ?>" target="_blank"><span class="preview-btn" style="padding:10px;"><?php _e('Preview your PDF', 'send-pdf-for-contact-form-7'); ?></span></a>
+                                        <a href="<?php echo str_replace($upload_dir['basedir'], $upload_dir['baseurl'], $createDirectory ).'/preview-'.$idForm.'.pdf?ver='.$_COOKIE['pdf_uniqueid']; ?>" target="_blank"><span class="preview-btn" style="padding:10px;"><?php _e('Preview your PDF', 'send-pdf-for-contact-form-7'); ?></span></a>
                                         <?php } ?>
                                     </td>
                                 </tr>

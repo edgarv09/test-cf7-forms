@@ -7,448 +7,480 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-03-25T05:51:48+01:00\n"
+"POT-Creation-Date: 2020-06-02T06:43:38+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.1.0\n"
 "X-Domain: contact-form-7-skins\n"
 
-#: visual.js:16227
+#: visual.js:14875
 msgid "Acceptance (confirm)"
 msgstr ""
 
-#: visual.js:16235
-#: visual.js:43052
+#: visual.js:14875
+#: visual.js:38170
 msgid "Make this checkbox checked by default"
 msgstr ""
 
-#: visual.js:16240
-#: visual.js:43058
+#: visual.js:14875
+#: visual.js:38170
 msgid "Make this work inversely"
 msgstr ""
 
-#: visual.js:16245
-#: visual.js:43064
+#: visual.js:14875
+#: visual.js:38170
 msgid "Make this checkbox optional"
 msgstr ""
 
-#: visual.js:16259
+#: visual.js:14876
 msgid "Checkbox (option)"
 msgstr ""
 
-#: visual.js:16267
-#: visual.js:16448
-#: visual.js:43171
+#: visual.js:14876
+#: visual.js:14880
+#: visual.js:38181
 msgid "Put a label first, a checkbox last"
 msgstr ""
 
-#: visual.js:16272
-#: visual.js:16453
-#: visual.js:43177
+#: visual.js:14876
+#: visual.js:14880
+#: visual.js:38181
 msgid "Wrap each item with label element"
 msgstr ""
 
-#: visual.js:16277
-#: visual.js:43183
+#: visual.js:14876
+#: visual.js:38181
 msgid "Make checkboxes exclusive"
 msgstr ""
 
-#: visual.js:16297
+#: visual.js:14877
 msgid "Date"
 msgstr ""
 
-#: visual.js:16304
-#: visual.js:16393
-#: visual.js:16526
-#: visual.js:16549
-#: visual.js:16578
-#: visual.js:16601
+#: visual.js:14877
+#: visual.js:14878
+#: visual.js:14885
 msgid "Default value"
 msgstr ""
 
-#: visual.js:16309
-#: visual.js:16342
-#: visual.js:16398
-#: visual.js:16531
-#: visual.js:16554
-#: visual.js:16583
-#: visual.js:16606
-#: visual.js:42937
+#: visual.js:14877
+#: visual.js:14878
+#: visual.js:14885
+#: visual.js:38165
 msgid "Use this text as the placeholder of the field"
 msgstr ""
 
-#: visual.js:16313
-#: visual.js:16402
+#: visual.js:14877
+#: visual.js:14878
 msgid "Range - min"
 msgstr ""
 
-#: visual.js:16317
-#: visual.js:16406
+#: visual.js:14877
+#: visual.js:14878
 msgid "Range - max"
 msgstr ""
 
-#: visual.js:16330
+#: visual.js:14877
 msgid "Email"
 msgstr ""
 
-#: visual.js:16347
-#: visual.js:16559
-#: visual.js:16611
+#: visual.js:14877
+#: visual.js:14885
 msgid "Akismet - this field requires author's email address"
 msgstr ""
 
-#: visual.js:16359
+#: visual.js:14877
 msgid "File (upload)"
 msgstr ""
 
-#: visual.js:16366
-#: visual.js:43196
+#: visual.js:14877
+#: visual.js:38182
 msgid "File size limit (bytes)"
 msgstr ""
 
-#: visual.js:16370
-#: visual.js:43218
+#: visual.js:14877
+#: visual.js:38183
 msgid "Acceptable file types"
 msgstr ""
 
-#: visual.js:16381
+#: visual.js:14877
 msgid "Number"
 msgstr ""
 
-#: visual.js:16421
+#: visual.js:14879
 msgid "Quiz"
 msgstr ""
 
-#: visual.js:16428
+#: visual.js:14880
 msgid "Question 1"
 msgstr ""
 
-#: visual.js:16429
+#: visual.js:14880
 msgid "Answer 1"
 msgstr ""
 
-#: visual.js:16431
+#: visual.js:14880
 msgid "Question 2"
 msgstr ""
 
-#: visual.js:16432
+#: visual.js:14880
 msgid "Answer 2"
 msgstr ""
 
-#: visual.js:16440
+#: visual.js:14880
 msgid "Radio Button (option)"
 msgstr ""
 
-#: visual.js:16458
-#: visual.js:16492
+#: visual.js:14881
+#: visual.js:14884
 msgid "Option 1"
 msgstr ""
 
-#: visual.js:16463
-#: visual.js:16495
+#: visual.js:14883
+#: visual.js:14884
 msgid "Option 2"
 msgstr ""
 
-#: visual.js:16474
+#: visual.js:14883
 msgid "Select (dropdown)"
 msgstr ""
 
-#: visual.js:16482
-#: visual.js:43159
+#: visual.js:14883
+#: visual.js:38181
 msgid "Allow multiple selections"
 msgstr ""
 
-#: visual.js:16487
-#: visual.js:43165
+#: visual.js:14883
+#: visual.js:38181
 msgid "Insert a blank item as the first option"
 msgstr ""
 
-#: visual.js:16506
+#: visual.js:14884
 msgid "Submit"
 msgstr ""
 
-#: visual.js:16519
+#: visual.js:14885
 msgid "Telephone"
 msgstr ""
 
-#: visual.js:16542
+#: visual.js:14885
 msgid "Text (short text)"
 msgstr ""
 
-#: visual.js:16571
+#: visual.js:14885
 msgid "Textarea (long text)"
 msgstr ""
 
-#: visual.js:16594
+#: visual.js:14885
 msgid "URL (website link)"
 msgstr ""
 
-#: visual.js:16638
+#: visual.js:14886
 msgid "Fieldset (with legend)"
 msgstr ""
 
-#: visual.js:16641
+#: visual.js:14886
 msgid "Legend .."
 msgstr ""
 
-#: visual.js:16647
+#: visual.js:14888
 msgid "List - ol"
 msgstr ""
 
-#: visual.js:16656
+#: visual.js:14889
 msgid "List Item - li"
 msgstr ""
 
-#: visual.js:16665
+#: visual.js:14890
 msgid "Paragraph - p"
 msgstr ""
 
-#: visual.js:18765
-#: visual.js:18766
+#: visual.js:16249
 msgid "Can not save! window.cf7svisual or post ID does not exist."
 msgstr ""
 
-#: visual.js:18858
+#: visual.js:16278
 msgid "Dismiss this notice."
 msgstr ""
 
-#: visual.js:18862
+#: visual.js:16279
 msgid "Visual saved!"
 msgstr ""
 
-#: visual.js:18882
+#: visual.js:16285
 msgid "Namespace %s is undefined!"
 msgstr ""
 
-#: visual.js:18892
+#: visual.js:16288
 msgid "Function %1$s.%2$s is undefined!"
 msgstr ""
 
-#: visual.js:18900
+#: visual.js:16290
 msgid "Function %s is undefined!"
 msgstr ""
 
-#: visual.js:19036
-#: visual.js:42900
+#: visual.js:16305
+#: visual.js:35539
+msgid "Form Options"
+msgstr ""
+
+#: visual.js:16323
+#: visual.js:38164
 msgid "Legend"
 msgstr ""
 
-#: visual.js:19043
+#: visual.js:16326
 msgid "Your Name (required)"
 msgstr ""
 
-#: visual.js:19049
+#: visual.js:16327
 msgid "Email Address (required)"
 msgstr ""
 
-#: visual.js:19057
+#: visual.js:16330
 msgid "Your Message"
 msgstr ""
 
-#: visual.js:19064
+#: visual.js:16333
 msgid "* Required"
 msgstr ""
 
-#: visual.js:19067
+#: visual.js:16334
 msgid "Send"
 msgstr ""
 
-#: visual.js:19152
+#: visual.js:16361
 msgid "Unable to duplicate!"
 msgstr ""
 
-#: visual.js:19213
+#: visual.js:16381
 msgid "Unable to add the item."
 msgstr ""
 
-#: visual.js:19337
+#: visual.js:16423
 msgid "There is no edit field available for this item."
 msgstr ""
 
-#: visual.js:19439
+#: visual.js:16443
 msgid "Unable to change the item."
 msgstr ""
 
-#: visual.js:19774
+#: visual.js:16551
 msgid "Visual Object Data is not valid ( JSON parse error )"
 msgstr ""
 
-#: visual.js:19801
+#: visual.js:16558
 msgid "Visual Object Data is not valid ( Invalid Cf7sType )"
 msgstr ""
 
-#: visual.js:42340
+#: visual.js:35539
+msgid "Configure this form options"
+msgstr ""
+
+#: visual.js:35547
+msgid "Visual Data"
+msgstr ""
+
+#: visual.js:35547
+msgid "Copy & paste visual form data"
+msgstr ""
+
+#: visual.js:35547
+msgid "Save Visual"
+msgstr ""
+
+#: visual.js:38003
 msgid "Only one reCAPTCHA per form allowed."
 msgstr ""
 
-#: visual.js:42355
+#: visual.js:38009
 msgid "Only one submit for each form."
 msgstr ""
 
-#: visual.js:42518
+#: visual.js:38076
 msgid "Only one %s allowed in a form."
 msgstr ""
 
-#: visual.js:42523
+#: visual.js:38077
 msgid "Node has recaptcha children. Only one recaptcha allowed in a form."
 msgstr ""
 
-#: visual.js:42527
+#: visual.js:38077
 msgid "Node has submit children. Only one submit allowed in a form."
 msgstr ""
 
-#: visual.js:42820
+#: visual.js:38159
 msgid "Field Type"
 msgstr ""
 
-#: visual.js:42832
+#: visual.js:38159
 msgid "Spinbox"
 msgstr ""
 
-#: visual.js:42834
+#: visual.js:38159
 msgid "Slider"
 msgstr ""
 
-#: visual.js:42843
+#: visual.js:38161
 msgid "Required"
 msgstr ""
 
-#: visual.js:42856
+#: visual.js:38162
 msgid "Name"
 msgstr ""
 
-#: visual.js:42878
+#: visual.js:38163
 msgid "Condition"
 msgstr ""
 
-#: visual.js:42900
+#: visual.js:38164
 msgid "Label"
 msgstr ""
 
-#: visual.js:42922
+#: visual.js:38165
 msgid "Default Value"
 msgstr ""
 
-#: visual.js:42957
+#: visual.js:38166
 msgid "This field requires author's name"
 msgstr ""
 
-#: visual.js:42964
+#: visual.js:38166
 msgid "This field requires author's email address"
 msgstr ""
 
-#: visual.js:42971
+#: visual.js:38166
 msgid "This field requires author's URL"
 msgstr ""
 
-#: visual.js:42982
+#: visual.js:38167
 msgid "Range"
 msgstr ""
 
-#: visual.js:42988
+#: visual.js:38167
 msgid "Min"
 msgstr ""
 
-#: visual.js:42995
+#: visual.js:38167
 msgid "Max"
 msgstr ""
 
-#: visual.js:43013
+#: visual.js:38168
 msgid "Content"
 msgstr ""
 
-#: visual.js:43029
+#: visual.js:38168
 msgid "See paragraph permitted phrasing content specification"
 msgstr ""
 
-#: visual.js:43044
-#: visual.js:43087
+#: visual.js:38170
+#: visual.js:38181
 msgid "Options"
 msgstr ""
 
-#: visual.js:43095
+#: visual.js:38181
 msgid "Default"
 msgstr ""
 
-#: visual.js:43095
+#: visual.js:38181
 msgid "Answer"
 msgstr ""
 
-#: visual.js:43243
+#: visual.js:38185
 msgid "Size"
 msgstr ""
 
-#: visual.js:43252
+#: visual.js:38185
 msgid "Normal"
 msgstr ""
 
-#: visual.js:43259
+#: visual.js:38185
 msgid "Compact"
 msgstr ""
 
-#: visual.js:43263
+#: visual.js:38185
 msgid "Theme"
 msgstr ""
 
-#: visual.js:43272
+#: visual.js:38185
 msgid "Light"
 msgstr ""
 
-#: visual.js:43279
+#: visual.js:38185
 msgid "Dark"
 msgstr ""
 
-#: visual.js:43292
+#: visual.js:38186
 msgid "Id Attribute"
 msgstr ""
 
-#: visual.js:43314
+#: visual.js:38187
 msgid "Class Attribute"
 msgstr ""
 
-#: visual.js:43451
+#: visual.js:38227
 msgid "Save"
 msgstr ""
 
-#: visual.js:43451
+#: visual.js:38227
 msgid "Done"
 msgstr ""
 
-#: visual.js:43850
+#: visual.js:38358
 msgid "Drag/Move"
 msgstr ""
 
-#: visual.js:43870
+#: visual.js:38361
 msgid "Collapse"
 msgstr ""
 
-#: visual.js:43870
+#: visual.js:38361
 msgid "Expand"
 msgstr ""
 
-#: visual.js:44537
+#: visual.js:38570
 msgid "edit"
 msgstr ""
 
-#: visual.js:44546
+#: visual.js:38570
 msgid "duplicate"
 msgstr ""
 
-#: visual.js:44555
+#: visual.js:38570
 msgid "delete"
 msgstr ""
 
-#: visual.js:44566
+#: visual.js:38570
 msgid "Add-on options"
 msgstr ""
 
-#: visual.js:51497
+#: visual.js:46142
 msgid "Dismiss this notice"
 msgstr ""
 
-#: visual.js:51668
+#: visual.js:46193
 msgid "FIELDS (CF7 TAGS)"
 msgstr ""
 
-#: visual.js:51683
+#: visual.js:46193
+msgid "Drag and drop or click a Contact Form 7 Tag to add it to the visual form editor."
+msgstr ""
+
+#: visual.js:46193
+msgid "To see how Fields are used, select a template it's a great way to get started quickly."
+msgstr ""
+
+#: visual.js:46193
+msgid "Any field content can be changed by clicking Edit on the field."
+msgstr ""
+
+#: visual.js:46193
 msgid "FIELDS (CF7 SKINS ITEMS)"
+msgstr ""
+
+#: visual.js:46193
+msgid "Use CF7 Skins Fields for the layout of your form."
+msgstr ""
+
+#: visual.js:46193
+msgid "Fieldsets, legends, and lists are used to group related fields, and allow for more detailed styling."
 msgstr ""

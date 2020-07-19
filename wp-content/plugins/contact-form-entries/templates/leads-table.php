@@ -79,7 +79,7 @@ if(is_array($field_label)){
   $field_label=implode(', ',$field_label);  
 } }
 if($field['name'] == 'created' && !empty($lead['created'])){
-   $field_label=strtotime($lead['created'])+$offset;
+   $field_label=strtotime($lead['created']); //+$offset
 $field_label= date('M-d-Y H:i:s',$field_label);   
 }
 ?>
