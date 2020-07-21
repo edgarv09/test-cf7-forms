@@ -174,3 +174,7 @@ https://es.wordpress.org/plugins/cf7-html-email-template-extension/#description
 mas de DB
 
 https://wordpress.org/plugins/contactic/
+
+
+Contact Form Entries
+
